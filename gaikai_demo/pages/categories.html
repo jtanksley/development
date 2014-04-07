@@ -1,0 +1,12 @@
+
+	<header>Tanksley Tales: Gaikai quick demo</header>
+		<div id="container">
+			<div class="categories">
+				<div class="content-module img-button" ng-repeat="category in categories | filter:query | orderBy:orderProp">
+				<h2>{{category.category}}</h2>
+				<a href="#/recipes/{{category.recipeID}}"><img ng-src="{{category.imageUrl}}" width=259 height= 172.5 ></a>
+				</div>
+			
+			</div>
+		</div>
+		<footer>Created By: J. Tanksley</footer>	

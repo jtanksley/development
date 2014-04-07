@@ -1,0 +1,69 @@
+/* Main.css */
+body{
+	font-family: 'Scada', sans-serif;
+	color: #351502;
+	/*
+	background: -webkit-linear-gradient(white, #DF8048);
+	background: -o-linear-gradient(white, #DF8048);
+	background: -moz-linear-gradient(white, #DF8048);
+	background: linear-gradient(white, #DF8048);
+	*/
+	
+}
+h3{
+	color: #a0ce4e;
+}
+#container {
+     
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+    /* just for demo */
+    min-width: 1024px;
+}
+.summary{
+	display: inline-block;
+	width: 500px;
+	height: auto;
+}
+header{
+	background: #a0ce4e;
+	color: white;
+}
+footer{
+	background: #a0ce4e;
+	color: white;
+}
+.img-button{
+	background: #fff;
+}
+.img-button:hover{
+	background: #eee;
+}
+.content-module{
+	width: 261px;
+	overflow: hidden;	   
+	border: 1px dashed #ccc;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+	padding: 5px;
+	margin: 10px;
+    zoom: 1
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.box1, .box3 {
+    background: #ccc
+}
+.box2, .box4 {
+    background: #0ff
+}
