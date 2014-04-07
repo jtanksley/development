@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* ******************************************************************** */
+/* ** 2 Minute Warning                                               ** */
+/* ** Button Style Sheet                                             ** */
+/* **                                                                ** */
+/* ** v. 1.0                                                         ** */
+/* **                                                                ** */
+/* ** Last updated @ 1030 on 12/10/2013 by Davis                     ** */
+/* ******************************************************************** */
+
+
+
+/* ******************************************************************** */
+/* ** MAIN LOGIC                                                     ** */
+/* ******************************************************************** */
+.button {
+	cursor:pointer;
+	position:relative;
+	top:5px;
+	color:#FFF;
+	margin-top:16px;
+	text-align:left;
+	display:inline-block;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	display:inline-block;
+	height:24px;	
+	font:bold 12px/26px Arial,sans-serif;
+	text-decoration:none;
+	padding-top: 2px;
+	}
+.button:hover {top:6px;padding-top: 2px;}
+.button:active {top:7px;}
+
+
+
+/* ******************************************************************** */
+/* ** COLOURS                                                        ** */
+/* ******************************************************************** */
+.button-purple {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d197fe, 2px 2px 6px 0px #777;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d197fe, 2px 2px 6px 0px #777;
+	box-shadow:inset 0px 1px 0px 0px #d197fe, 2px 2px 6px 0px #777;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a53df6), color-stop(1, #5e1996) );
+	background:-moz-linear-gradient( center top, #a53df6 5%, #5e1996 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a53df6', endColorstr='#5e1996');
+	background-color:#a53df6;
+	border:1px solid #9c33ed;
+	text-shadow:1px 1px 0px #5e1996;}
+.button-purple:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5e1996), color-stop(1, #a53df6) );
+	background:-moz-linear-gradient( center top, #5e1996 5%, #a53df6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e1996', endColorstr='#a53df6');
+	background-color:#5e1996;}
+
+.button-orange, .button-social {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffff00, 2px 2px 6px 0px #888;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffff00, 2px 2px 6px 0px #888;
+	box-shadow:inset 0px 1px 0px 0px #ffff00, 2px 2px 6px 0px #888;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffbb00), color-stop(1, #fe6a00) );
+	background:-moz-linear-gradient( center top, #ffbb00 5%, #fe6a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbb00', endColorstr='#fe6a00');
+	background-color:#ffbb00;
+	border:1px solid #fd4300;
+	text-shadow:1px 1px 0px #fd4300;}
+.button-orange:hover, .button-social:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe6a00), color-stop(1, #ffbb00) );
+	background:-moz-linear-gradient( center top, #fe6a00 5%, #ffbb00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe6a00', endColorstr='#ffbb00');
+	background-color:#fe6a00;}
+
+.button-white {
+	-moz-box-shadow:2px 2px 6px 0px #AAA;
+	-webkit-box-shadow:2px 2px 6px 0px #AAA;
+	box-shadow:2px 2px 6px 0px #AAA;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fefefe), color-stop(1, #ececec) );
+	background:-moz-linear-gradient( center top, #fefefe 5%, #ececec 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#ececec');
+	background-color:#fefefe;
+	border:1px solid #ffffff;
+	color:#404040;}
+.button-white:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ececec), color-stop(1, #fefefe) );
+	background:-moz-linear-gradient( center top, #ececec 5%, #fefefe 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#fefefe');
+	background-color:#ececec;}
+
+
+
+/* ******************************************************************** */
+/* ** ICONS & CAPTIONS                                               ** */
+/* ******************************************************************** */
+.button-email div {background:url(images/button-icon-email.png) no-repeat; width:167px; padding-left:34px;}
+.button-facebook div {background:url(images/button-icon-facebook.png) no-repeat; width:167px; padding-left:34px;}
+.button-confirm div {background:url(images/button-icon-confirm.png) no-repeat; width:57px; padding-left:36px;}
+.button-cancel div {background:url(images/button-icon-cancel.png) no-repeat; width:54px; padding-left:36px;}
+.button-save div {background:url(images/button-icon-save.png) no-repeat; width:90px; padding-left:33px;}
+.button-back div {background:url(images/button-icon-back.png) no-repeat; width:38px; padding-left:31px;}
+.button-logout div {background:url(images/button-icon-logout.png) no-repeat; width:53px; padding-left:30px;}
+.button-close {width:22px; height:21px;}
+.button-close div {background:url(images/button-icon-close.png) no-repeat; width:11px; height:10px; margin:5px auto 0 auto;}
+.button-social {width:30px; height:30px;}
+.button-social-facebook div {background:url(images/button-icon-social-facebook.png) no-repeat; width:19px; height:18px; margin:6px auto 0 auto;}
+.button-social-twitter div {background:url(images/button-icon-social-twitter.png) no-repeat; width:21px; height:16px; margin:7px auto 0 auto;}
+.button-social-youtube div {background:url(images/button-icon-social-youtube.png) no-repeat; width:21px; height:14px; margin:8px auto 0 auto;}
+.button-pdf div {background:url(images/button-icon-pdf.png) no-repeat; width:95px; padding-left:36px;}
+.button-generic {text-align:center; padding:2px 12px;}
