@@ -1,0 +1,20 @@
+<div class="row wrapper">
+	<table class="table table-striped table-hover">
+		<thead>
+		<th>Date</th>								
+		<th>Note Type</th>								
+		<th>Author/Provider</th>								
+		</thead>
+		<tbody>
+			<tr ng-repeat="note in patient.notes track by $index" ng-hide="patient.notes.length == 0">					
+				<td><a href="" ng-click="view($index)" ng-dblclick="viewFull($index)" class="client-link">
+					{{note.dateCreated}}
+					</a>
+				</td>
+				<td>{{note.noteType}}</td>				
+				<td>{{note.author}}</td>				
+			</tr>
+			<tr ng-hide="patient.notes.length> 0"><td colspan= "7"><div class="alert alert-warning" role="alert" >No notes recorded for patient.</div></td></tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,21 @@
+<table class="table table-striped table-hover">	
+	<thead>
+		<th>Patient Name</th>
+		<th>Date</th>
+		<th>Test Name</th>							
+		<th>Delivered To</th>							
+	</thead>
+	<tbody>
+	
+		<tr ng-repeat="lab in labs" ng-hide="labs.length == 0">		
+			<td><a href="" ng-click="view($index)" ng-dblclick="viewFull($index)" class="client-link">{{lab.firstName}} {{lab.lastName}} </a></td>
+			<td>{{lab.collectionDate}}</td>
+			<td>{{lab.testName}}</td>
+			<td>{{lab.deliveredTo}}</td>
+		</tr>
+		<tr ng-hide="labs.length> 0">
+			<td colspan= "7"><div class="alert alert-warning" role="alert" >No patients found.</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

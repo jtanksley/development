@@ -1,0 +1,25 @@
+<div class="row wrapper">
+	<table class="table table-striped table-hover">
+		<thead>
+		<th>Date</th>								
+		<th>Allergen</th>								
+		<th>Reaction</th>								
+		<th>Recorded By</th>								
+		</thead>
+		<tbody>
+			<tr ng-repeat="allergy in filtered = (patient.allergies | filter: {hidden : '1'}) track by $index" ng-hide="filtered.length == 0">					
+				<td><a href="" ng-click="view(allergy)" ng-dblclick="viewFull($index)" class="client-link">
+					{{allergy.date}} 
+					</a>
+				</td>
+				<td>{{allergy.allergen}}</td>
+				<td>{{allergy.reaction}}</td>
+				<td>{{allergy.recordedBy}}</td>				
+			</tr>
+			
+			<tr ng-hide="filtered.length == 0 || patient.allergies.length == null"><td colspan="7"><allergies-buttons></allergies-buttons></td></tr>
+			<tr ng-hide="filtered.length> 0"><td colspan= "7"><div class="alert alert-warning" role="alert" >No allergies recorded for patient.</div></td></tr>
+			<tr ng-hide="filtered.length> 0"><td colspan="7"><no-allergies-buttons></no-allergies-buttons></td></tr>
+		</tbody>
+	</table>
+</div>

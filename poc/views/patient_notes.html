@@ -1,0 +1,52 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Notes</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Patients</a>
+            </li>
+            <li class="active">
+                <strong>Notes</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="row wrapper wrapper-content animated fadeInRight" ng-controller="NotesCtrl">
+	<!-- Notes Page -->	
+	<div class="row" ng-include= "'views/common/header.html'"ng-controller="HeaderCtrl">	
+	</div>	
+	<div class="row wrapper">	
+		<div class="col-lg-12">
+			<div class="">
+				<!-- Notes List -->
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5>Note List</h5>
+						<div ibox-tools></div>
+					</div>
+					<div class="ibox-content">					
+						<div class="row">
+							<div class="col-lg-6">
+								<note-list><note-list>
+							</div>
+							<div class="col-lg-6" ng-show="showThis">
+							<div class="ibox-title">
+								<h5>Note View</h5>								
+							</div>
+								<note-detail><note-detail>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+			
+	</div>
+</div>

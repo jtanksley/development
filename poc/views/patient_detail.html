@@ -1,0 +1,32 @@
+<div class="wrapper">
+<!-- Patient Detail -->
+	<div class="row m-b-lg">
+		<div class="col-lg-6 text-center">
+			<h2>{{patient.firstName}} {{patient.lastName}}</h2>
+
+			<div class="m-b-sm">
+				<img alt="image" class="img-circle" src="{{patient.avatar}}"
+					 style="width: 62px">
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<strong>
+				Patient Details
+			</strong>
+			<p>
+				Last Seen on: {{patient.lastSeen}}
+			</p>
+			<button type="button" class="btn btn-primary btn-sm btn-block" ng-click="$state.go('mailbox.email_compose',{patient: $rootScope.patient})"><i
+					class="fa fa-envelope"></i> Send Message
+			</button>
+			<p><br/>
+			<button type="button" class="btn btn-primary btn-sm btn-block"ng-click="viewChart()"><i
+					class="fa fa-clipboard"></i> View Chart
+			</button>			
+			</p>			
+		</div>
+	</div>
+	<div class="client-detail">
+		
+	</div>
+</div>

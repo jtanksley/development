@@ -1,0 +1,32 @@
+	<li ng-class="{active: $state.includes('patients')}">
+                <a href="patients.main"><i class="fa fa-group"></i> <span class="nav-label">Patients</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('patient')}">
+			<li ui-sref-active="active" >
+				<a ui-sref="patients.main"><i class="fa fa-male"></i><span class="nav-label">Patient Search </span></a>	
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="patients.chart"><i class="fa fa-clipboard"></i> <span class="nav-label">Chart Summary</span> </a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="patients.history"><i class="fa fa-archive"></i> <span class="nav-label">History</span> </a>
+			</li>
+			 <li ui-sref-active="active">
+				<a ui-sref="patients.medications"><i class="fa fa-medkit"></i> <span class="nav-label">Medications</span></a>
+			</li>
+			 <li ui-sref-active="active">
+				<a ui-sref="patients.allergies"><i class="fa fa-stethoscope"></i> <span class="nav-label">Allergies</span></a>
+			</li>
+			 <li ui-sref-active="active">
+				<a ui-sref="patients.notes"><i class="fa fa-files-o"></i> <span class="nav-label">Notes</span></a>
+			</li>
+			 <li ui-sref-active="active">
+				<a ui-sref="patients.labs"><i class="fa fa-flask"></i> <span class="nav-label">Labs</span></a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="patients.procedures"><i class="fa fa-hospital-o"></i> <span class="nav-label">Procedures</span></a>
+			</li>
+			 <li ui-sref-active="active">
+				<a ui-sref="patients.radiology"><i class="fa fa-film"></i> <span class="nav-label">Radiology</span></a>
+			</li>
+		</ul>
+	</li>

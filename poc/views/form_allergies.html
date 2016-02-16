@@ -1,0 +1,49 @@
+<div class= "wrapper modal-dialog">
+	<!-- Vitals Form -->
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Add/Edit Allergy</h5>
+			
+		</div>
+		<div class="ibox-content">
+		<div class="input-group">
+		<div>
+			<!--- <input auto-complete ui-items="searchResults" ng-model="selected"> -->
+			 <p>Selected: {{drug.selected}}</p>
+			 <ui-select ng-model="drug.selected" theme="bootstrap" ng-disabled="disabled" style="width: 525px;">
+				<ui-select-match placeholder="Search for drug...">{{$select.selected}}</ui-select-match>
+				<ui-select-choices repeat="drug in searchResults | filter: $select.search track by $index">
+				  <span ng-bind-html="drug | highlight: $select.search"></span>				  
+				</ui-select-choices>
+			 </ui-select>
+		</div>
+			<!--
+			<span class="input-group-btn">
+					<button type="button" class="btn btn btn-primary" ng-click="search()"> <i class="fa fa-search"></i> Search</button>
+			</span>
+			-->
+		</div>
+			
+			<form class="form-horizontal">
+				<div class="form-group"><label class="col-lg-2 control-label">Allergen</label>				
+					<div class="col-lg-5"><input type="text" placeholder="Allergen" class="form-control" ng-model="" ng-bind-html="drug.selected">
+					<input type="text" placeholder="Drug Allergen" class="form-control" ng-model="drug.selected">
+					</div>
+				</div>
+				<div class="form-group"><label class="col-lg-2 control-label">Reactions</label>					
+					<div class="col-lg-3"><input type="text" placeholder="Reactions" class="form-control" ng-model="patient.allergyDetail.reaction">
+					</div>
+				</div>				
+				<div class="form-group">
+					<div class="col-lg-offset-2 col-lg-10">
+						<button class="btn btn-sm btn-white" type="button" ng-click="add()">Save</button>
+						<button class="btn btn-sm btn-white" type="button" ng-click="$dismiss()">Cancel</button>
+					</div>
+					
+						
+				
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

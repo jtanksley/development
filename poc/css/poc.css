@@ -1,0 +1,42 @@
+.clearSearch {
+	position:absolute;
+	margin-top: 1%;
+	margin-left: -4%;
+	cursor: pointer;	
+}
+.clearTopSearch{
+	margin-top: 10%;
+	position:absolute;	
+	margin-left: -4%;
+	cursor: pointer;	
+}
+.alterWidth{
+	width: 250px;
+}
+.wrapText {
+	width: 800px;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 50%;
+}
+.vitalsDetailMargins{
+	margin-top: 25px;
+	margin-left: -65px;
+}
+.allergiesDetailMargins{
+	margin-top: 25px;
+	margin-left: -65px;
+}
+.medicationsDetailMargins{
+	margin-top: 25px;
+	margin-left: -65px;
+}
+
+
+.fontResize{
+	font-size: 2.5em;
+	marging-top: -10px;
+}
+.modal-dialog{
+ 
+}

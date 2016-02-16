@@ -1,0 +1,44 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Basic Form</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Forms</a>
+            </li>
+            <li class="active">
+                <strong>Basic Form</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="LabsCtrl">
+	<div class= "row">
+		<div class="col-lg-12">
+			<h2>Lab Review</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="ibox-content">
+				<div class="full-height-scroll" full-scroll>
+					<div class="table-responsive" ng-model="labs">
+						<lab-list></lab-list>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6" ng-show="showThis">
+			<div class="ibox-title">
+				<h5>Lab Summary</h5>
+			</div>
+			<div class="ibox-content animated fadeInRight">
+				<lab-detail></lab-detail>
+			</div>
+		</div>
+	</div>

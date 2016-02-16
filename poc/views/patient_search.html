@@ -1,0 +1,59 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Patients</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>            
+            <li class="active">
+                <strong>Patients</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+		
+        <div class="col-sm-6">
+            <div class="ibox">
+                <div class="ibox-content">
+				
+                    <span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> {{today}}</span>
+                    <h2>Patients</h2>                                  			
+                    <div class="clients-list">					 
+                        <ul class="nav nav-tabs">
+                            <span class="pull-right small text-muted" ng-hide="resultCount == 0" > Last {{limit}} Patients Viewed</span>
+                            <li ng-class="{'active' : tab == 1}"><a ng-click="tab = 1" ng-init="tab = 1"><i class="fa fa-user"></i> {{tabTitle}}</a></li>                            
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active" ng-show="tab == 1">
+                                <div class="full-height-scroll" full-scroll>
+                                    <div class="table-responsive">							
+                                       <patient-list></patient-list>									  
+                                    </div>
+									
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" >
+            <div class="ibox"style="height: 200px;">
+
+                <div class="ibox-content animated fadeInRight" ng-show="showThis">
+                    <div class="tab-content">
+					 <div id="patientContent" patient-detail style="height:150px;" ></div>	
+						
+					</div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

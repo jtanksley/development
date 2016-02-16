@@ -1,0 +1,112 @@
+<div ng-controller = 'SearchCtrl'>
+<nav class="navbar-default navbar-static-side" role="navigation"  ng-hide="patNav">
+<div class='row 'style="margin-left: px;"><span minimaliza-sidebar></span></div>
+ <div class="sidebar-collapse">	
+	 <ul side-navigation class="nav metismenu" id="side-menu">
+		 <li class="nav-header">
+                <div class="dropdown profile-element" dropdown>
+                    <a class="dropdown-toggle" dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">My Account<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+						<li><a href="">View Profile</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                  <img src="img/reversed-logo.png" width= "32" height="32"/>
+                </div>
+
+            </li>
+			<li ui-sref-active="active" ng-click="clearPatient()">
+                <a ui-sref="index.main"><i class="fa fa-home"></i><span class="nav-label">Home</span> </a>
+            </li>	
+			
+            <li ui-sref-active="active" >
+                <a ui-sref="index.search"><i class="fa fa-group"></i><span class="nav-label">Patients </span></a>	
+            </li>
+						
+			 <li ui-sref-active="active">
+                <a ui-sref="mailbox.inbox"><i class="fa fa-envelope"></i><span class="nav-label">Messages</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="index.imaging"><i class="fa fa-film"></i><span class="nav-label">Imaging</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="index.labs"><i class="fa fa-flask"></i><span class="nav-label">Labs</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="index.encounters"><i class="fa fa-user-md"></i><span class="nav-label">Encounters</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.schedule"><i class="fa fa-calendar"></i><span class="nav-label">Schedule</span></a>
+            </li>				
+	 </ul>
+	 </div>	   
+</nav>
+<nav class="navbar-default navbar-static-side" role="navigation" ng-hide="!patNav">
+<div class='row 'style="margin-left: px;"><span minimaliza-sidebar></span></div>
+    <div class="sidebar-collapse">
+		<li class="nav-header">
+                <div class="dropdown profile-element" dropdown>
+                    <a class="dropdown-toggle" dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">My Account<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+						<li><a href="">View Profile</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                  <img src="img/reversed-logo.png" width= "32" height="32"/>
+                </div>
+
+            </li>
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li ui-sref-active="active" ng-click="clearPatient()">
+                <a ui-sref="index.main" ><i class="fa fa-home"></i><span class="nav-label">Home</span> </a>
+            </li>           
+			<li ui-sref-active="active">
+                <a ui-sref="patients.chart"><i class="fa fa-clipboard"></i> <span class="nav-label">Chart Summary</span> </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="patients.history"><i class="fa fa-archive"></i> <span class="nav-label">History</span> </a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.medications"><i class="fa fa-medkit"></i> <span class="nav-label">Medications</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.allergies"><i class="fa fa-stethoscope"></i> <span class="nav-label">Allergies</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.notes"><i class="fa fa-files-o"></i> <span class="nav-label">Notes</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.labs"><i class="fa fa-flask"></i> <span class="nav-label">Labs</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.vitals"><i class="fa fa-stethoscope"></i> <span class="nav-label">Vitals</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="patients.procedures"><i class="fa fa-hospital-o"></i> <span class="nav-label">Procedures</span></a>
+            </li>
+			 <li ui-sref-active="active">
+                <a ui-sref="patients.radiology"><i class="fa fa-film"></i> <span class="nav-label">Radiology</span></a>
+            </li>
+			
+			
+        </ul>
+
+    </div>
+</nav>
+<div>

@@ -1,0 +1,34 @@
+[ 
+	{
+		"userID": "1",            
+		"messageID": "2",            
+		"fromEmail": "andyanderson@gmail.com",
+		"fromName": "Andy Anderson",
+		"subject" : "RE: My next follow up visit.",
+		"body": "Hello, I need to change my next scheduled appointment from today, 10/12/2015 to next week, preferrably, 10/19/2015 at 3pm.  Please let me know if that would be a good time for you. Thanks, Andy."
+	},
+	{
+		"userID": "1",            
+		"messageID": "3",            
+		"fromEmail": "bdbarnes@gmail.com",
+		"fromName": "Beverly Barnes",
+		"subject" : "RE: Confirm Diagnosis.",
+		"body": "Hello, I need to change my next scheduled appointment from today, 10/12/2015 to next week, preferrably, 10/19/2015 at 3pm.  Please let me know if that would be a good time for you. Thanks, Beverly."
+	},
+	{
+		"userID": "1",            
+		"messageID": "4",            
+		"fromEmail": "junderwood@gmail.com",
+		"fromName": "John Underwood",
+		"subject" : "I promise this is not spam.",
+		"body": "I lied, this is spam."
+	},
+	{
+		"userID": "1",            
+		"messageID": "5",            
+		"fromEmail": "hhuges@gmail.com",
+		"fromName": "Howard Hughes",
+		"subject" : "Questions from my established follow up.",
+		"body": "Hey Doc, I have a question.  Is it ice for the first 24 hours or longer?  Also, would an epsom salt bath be better than just applying heat when it's time to do so?, Thanks, HH"
+	}
+]

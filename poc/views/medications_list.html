@@ -1,0 +1,24 @@
+<div class="row wrapper">
+	<table class="table table-striped table-hover">
+		<thead>
+		<th>Date</th>								
+		<th>Prescribed By</th>								
+		<th>Medications</th>								
+		</thead>
+		<tbody>
+			<tr ng-repeat="medication in patient.medications track by $index" ng-hide="patient.medications.length == 0">					
+				<td><a href="" ng-click="view($index)" ng-dblclick="viewFull($index)" class="client-link">
+					{{medication.startDate}}
+					</a>
+				</td>
+				<td>
+					{{medication.prescribedBy}}
+				</td>
+				<td>
+					{{medication.medication}} {{medication.dosage}}
+				</td>
+			</tr>
+			<tr ng-hide="patient.medications.length> 0"><td colspan= "7"><div class="alert alert-warning" role="alert" >No medications recorded for patient.</div></td></tr>
+		</tbody>
+	</table>
+</div>

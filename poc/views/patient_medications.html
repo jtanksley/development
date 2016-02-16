@@ -1,0 +1,54 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Medications</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Patients</a>
+            </li>
+            <li class="active">
+                <strong>Medications</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="row wrapper wrapper-content animated fadeInRight" ng-controller="MedicationsCtrl">
+	<!-- Medications Page -->	
+	<div class="row" ng-include= "'views/common/header.html'"ng-controller="HeaderCtrl">	
+	</div>	
+	
+	<div class="row wrapper">	
+		<div class="col-lg-12">
+			<div class="">
+				<!--Medications -->
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5>Medications</h5>
+						<div ibox-tools></div>
+					</div>
+					<div class="ibox-content">
+						<div class="row">
+							<div class="col-lg-6">							
+								<medications-list></medications-list>
+							</div>
+							<div class="col-lg-6" ng-show="showThis">
+								<div class="ibox-title">
+									<h5>Medications Detail</h5>
+								</div>								
+							<medications-detail></medications-detail>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+			
+	</div>
+</div>

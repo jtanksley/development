@@ -1,0 +1,16 @@
+<div class="row wrapper">
+	<table class="table table-striped table-hover">
+		<thead>
+		<th>Date Taken</th>								
+		</thead>
+		<tbody>
+			<tr ng-repeat="vital in patient.vitals track by $index" ng-hide="patient.vitals.length == 0">					
+				<td><a href="" ng-click="view($index)" ng-dblclick="viewFull($index)" class="client-link">
+					{{vital.takenDate}}
+					</a>
+				</td>			
+			</tr>
+			<tr ng-hide="patient.vitals.length> 0"><td colspan= "7"><div class="alert alert-warning" role="alert" >No vitals recorded for patient.</div></td></tr>
+		</tbody>
+	</table>
+</div>
